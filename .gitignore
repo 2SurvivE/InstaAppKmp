@@ -2,19 +2,16 @@
 
 .gradle/
 **/build/
-
 local.properties
 .DS_Store
-
 .idea/caches/
 .idea/libraries/
 .idea/modules.xml
 .idea/workspace.xml
 .idea/navEditor.xml
 .idea/assetWizardSettings.xml
-
 /captures/
 .externalNativeBuild/
 .cxx/
-
-.kotlin/
+.kotlin/*.hprof
+*.hprof
