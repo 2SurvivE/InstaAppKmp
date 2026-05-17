@@ -1,20 +1,26 @@
 pluginManagement {
     repositories {
-        mavenLocal()
-        maven("https://mirrors.tencent.com/nexus/repository/maven-tencent/")
+        maven {
+            url = uri("https://mirrors.tencent.com/nexus/repository/maven-tencent/")
+        }
+
         google()
         mavenCentral()
         gradlePluginPortal()
     }
 }
 
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
     repositories {
-        mavenLocal()
-        maven("https://mirrors.tencent.com/nexus/repository/maven-tencent/")
         google()
         mavenCentral()
+
+        maven {
+            url = uri("https://mirrors.tencent.com/nexus/repository/maven-tencent/")
+        }
     }
 }
 

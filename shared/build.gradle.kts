@@ -20,7 +20,11 @@ kotlin {
             }
         }
 
-        val ohosArm64Main by getting
+        val ohosArm64Main by getting {
+            dependencies {
+                // 如果鸿蒙侧有单独依赖，可以放这里
+            }
+        }
     }
 }
 
